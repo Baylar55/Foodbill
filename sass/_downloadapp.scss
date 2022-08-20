@@ -1,0 +1,124 @@
+@import "variables";
+.download-app {
+  // border: 5px solid red;
+  width: 86vw;
+  height: 64vh;
+  background-image: url(/assets/images/269\ 1.png);
+  padding-block: 86px;
+  margin: 0 auto;
+  border-radius: 60px 0px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  h3 {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    width: 321px;
+    height: 98px;
+    // margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  .app-img1 {
+    position: relative;
+    right: -35vw;
+    top: -82vh;
+  }
+  .app-img2 {
+    position: relative;
+    right: -26vw;
+    top: -70vh;
+  }
+  .app-box {
+    margin-left: 30px;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .app-img1,
+  .app-img2 {
+    width: 27vw;
+    height: 90vh;
+    // gap:-20px;
+    position: absolute;
+    left: 45%;
+  }
+  .app-img1 {
+    position: absolute;
+    top: -420px !important;
+    margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .download-app {
+    height: 57vh !important;
+    // border: 10px solid red !important;
+  }
+  .appinstall {
+    img {
+      width: 80% !important;
+    }
+  }
+  .app-img1,
+  .app-img2 {
+    width: 28vw;
+    height: 88vh;
+    // gap:-20px;
+    position: absolute;
+    // top:-170% !important;
+  }
+  .app-img2 {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h3 {
+    font-size: 30px !important;
+  }
+  .appinstall {
+    img {
+      width: 33vw !important;
+    }
+  }
+  .app-img1,
+  .app-img2 {
+    height: 70vh;
+    width: 28vw;
+    top: -330px !important;
+  }
+}
+@media screen and (max-width: 740px) {
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-block: 50px !important;
+  }
+  .app-box {
+   margin: 0 auto !important;
+  }
+  .app-images{
+    position: relative;
+    // top:65vh;
+    left:-35vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .app-img1, .app-img2{
+   width: 40vw;
+   height: 90vh;
+   margin-inline: -14%;
+  }
+}
+@media screen and (max-width: 650px){
+  .app-box{
+    h3{
+      font-size: 15px !important;
+    }
+  }
+}

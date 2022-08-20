@@ -1,0 +1,24 @@
+@use 'homepage';
+@use 'howtowork';
+@use 'service';
+@use 'product';
+@use 'downloadapp';
+@use 'testimonials';
+@use 'subscribebox';
+@use 'footer';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+ body{
+  overflow-x: hidden;
+}
+ @font-face {
+  font-family: "Product Sans";
+  src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+
+ 

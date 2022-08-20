@@ -1,0 +1,122 @@
+@import "variables";
+
+.htw {
+  display: flex;
+  width: 100%;
+  img {
+    // display: inline-block;
+    width: 90%;
+    height: 600px;
+    z-index: -1;
+  }
+
+  .htw-content {
+    width: 45vw;
+    margin-block: auto;
+    margin-left: -10%;
+
+    h6 {
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $color-primary;
+    }
+
+    h3 {
+      width: 450px;
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      color: $color-headers;
+      margin-bottom: 40px;
+    }
+
+    p {
+      width: 450px;
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $color-secondary;
+    }
+    .btn-lm{
+     margin: 35px 0;
+     width: 170px;
+     height: 50px;
+     border-radius: 54px;
+     padding: 13px 10px;
+     gap:10px;
+     background-color: $color-primary;
+     border: none;
+     display: flex;
+     color: #fff;
+     font-family: "Product Sans";
+     font-style: normal;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 24px;
+     letter-spacing: 1px;
+     text-align: center;
+     position: relative;
+     cursor: pointer;
+     span {
+       border-bottom: 2.3px solid $color-primary;
+       position: absolute;
+       z-index: 1;
+       
+     }
+     span {
+       height: 12px;
+       width: 12px;
+       border-right: 2.3px solid $color-primary;
+       transform: rotate(-45deg);
+       position: absolute;
+       background-color: #fff;
+       font-size: 30px;
+       top: 19px;
+       right: 21px;
+     }
+     &::after{
+       content: " ";
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: #fff;
+       position: relative;
+       right: -15px;
+       top:-8px;
+     }
+    }
+  }
+}
+@media screen and (max-width:1020px){
+  .htw{
+    img{
+      width: 600px;
+      height: 350px;
+      margin-bottom: -310px;
+      opacity: 40%;
+    }
+    flex-direction: column;
+  }
+  .htw-content{
+    width: fit-content !important;
+    margin: 0 auto !important;
+    z-index: 1;
+    // border: 1px solid red !important;
+    p{
+      font-weight:bold ;
+      color:black !important;
+    }
+    
+  }
+  .btn-lm{
+    margin: 20px auto !important;
+  }
+}
+

@@ -1,0 +1,136 @@
+@import "variables";
+footer{
+  background-color: #f5f5f5;
+  padding-bottom: 25px;
+}
+.footer {
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  // background: #f5f5f5;
+  & > ul {
+    width: 20%;
+  }
+  ul li {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-secondary;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  ul li:first-child {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+  .paragraph {
+    margin-top: -15px;
+  }
+  .footer-social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .footer-social-icons {
+    margin-top: -50px;
+  }
+  input {
+    width: 270px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: none;
+    padding-inline: 10px;
+    // aaaaa
+    // display: flex;
+    position: relative;
+    // text-align: center;
+    // cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+
+    // aaaaa
+    span {
+      border-bottom: 2.3px solid $color-primary;
+      position: absolute;
+      z-index: 1;
+      border: 10px solid red !important;
+    }
+    span {
+      height: 12px;
+      width: 12px;
+      border-right: 2.3px solid $color-primary;
+      transform: rotate(-45deg);
+      position: absolute;
+      background-color: #fff;
+      font-size: 30px;
+      top: 19px;
+      right: 21px;
+    }
+    &::after {
+      content: " ";
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      right: -12px;
+    }
+  }
+  .fa-solid {
+    width: 40px;
+    height: 40px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 11px;
+    position: relative;
+    float: right;
+    margin-top: -45px;
+    margin-right: 5px;
+  }
+}
+.copyright {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 170%;
+  color: $color-secondary;
+  border-top: 1.5px solid #DDDDDD;
+  padding-top: 25px;
+}
+
+
+// <i class="fa-solid fa-greater-than"></i>
+@media screen and (max-width:1300px){
+  footer{
+    margin: 0 auto;
+  }
+  .footer{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    &>ul{
+      text-align: center;
+      width: 40%;
+      // gap:80px;
+    }
+    & ul:first-child{
+      margin-right: 20px;
+    }
+  }
+}

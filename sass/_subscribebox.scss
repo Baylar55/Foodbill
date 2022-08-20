@@ -1,0 +1,174 @@
+@import "./variables";
+.sub-box-container {
+  background-image: url(/assets/images/269\ 2.png);
+  background-repeat: no-repeat;
+  width: 75vw;
+  margin: 0 auto;
+  border-radius: 60px 0px;
+  height: 300px;
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  .cnt-image {
+    position: relative;
+    margin-top: -100px;
+  }
+  h3 {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    width: 500px;
+  }
+  p {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 500px;
+    color: $color-secondary;
+  }
+  input {
+    width: 500px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    padding-inline: 20px;
+  }
+  .subbox-content {
+    height: 85%;
+    width: fit-content;
+    // border: 3px solid red;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .subscribe {
+    width: 120px;
+    height: 50px;
+    background: $color-primary;
+    border-radius: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1px;
+    position: relative;
+    // margin-block: 25px;
+    margin-top: -76px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+::placeholder {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #cccccc;
+}
+
+@media screen and (max-width: 1300px) {
+  .subscribe-box{
+    margin-block: 120px;
+  }
+  .sub-box-container {
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .subbox-content {
+    width: fit-content;
+    // border: 1px solid red;
+  }
+  .cnt-image {
+    img {
+      width: 330px;
+      position: relative;
+      top: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .cnt-image img {
+    display: none;
+  }
+  .subscribe-box {
+    margin-bottom: 140px;
+    height: 500px;
+  }
+
+  .sub-box-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-block: 30px;
+    position: relative;
+    margin-top: -40px;
+    background-image: none;
+  }
+
+  .sub-box-container::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-image: url(/assets/images/hamburger-veggie-burger-take-out-fast-food-kebab-delicious-beef-burger-695bdb4c987243b9c11340e4fd3cec41.png);
+    background-repeat: no-repeat;
+    background-position: 65% 20%;
+    // border: 2px solid red !important;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(4.5px);
+  }
+
+  .subbox-content {
+    margin-top: 130px !important;
+    text-align: center;
+    // border: 1px solid red;
+    height: 270px !important;
+    justify-content: space-around;
+    h3 {
+      color: $color-primary;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      color: lighten(black,10%);
+      font-size: 18px;
+      font-weight: 600;
+    }
+    input{
+      border: 2px solid $color-primary;
+    }
+    button{
+      top: 7px;
+      right: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+ input{
+  margin: 0 auto;
+  width: 90vw !important;
+ }
+ button{
+  right: 25px !important;
+ }
+}

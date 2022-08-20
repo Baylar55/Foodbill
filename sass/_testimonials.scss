@@ -1,0 +1,169 @@
+@import "variables";
+
+.testimonials {
+  margin-top: 250px;
+  background-image: url(/assets/images/vegetable-food-diet-health-eating-vegetables-and-fork-2eaceb13dbe391d6ddd9e988c59d4f22.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: -1% -10%;
+  h6 {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-primary;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: $color-headers;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 25px;
+  }
+  .test-content {
+    display: flex;
+    justify-content: center;
+  }
+  .content-text {
+    width: 500px;
+    align-items: center;
+    height: 483px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img {
+      border-radius: 50%;
+    }
+    .name {
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-headers;
+    }
+    .job {
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $color-secondary;
+    }
+    p {
+      font-family: "Product Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      text-align: center;
+      color: $color-secondary;
+    }
+  }
+  .test-img {
+    width: 500px;
+  }
+  .chef {
+    display: flex;
+  }
+  .img-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn-right-arrow,
+  .btn-left-arrow {
+    width: 50px;
+    height: 50px;
+    background-color: $color-primary;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-right: 15px;
+    border: 1.5px solid #eeeeee;
+    &:hover {
+      background-color: white;
+      color: $color-primary;
+    }
+  }
+}
+@media screen and (max-width: 1360px) {
+  .testimonials {
+    background-size: 25% 50%;
+    margin-bottom: 230px !important;
+    & > h6,
+    h3 {
+      margin-left: 100px;
+    }
+  }
+  .test-img {
+    display: none;
+  }
+  .content-text {
+    // border: 3px solid red;
+    margin-right: -80px !important;
+    text-align: center;
+    padding-block: 30px;
+    position: relative;
+    margin-top: 40px;
+  }
+  .content-text::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -20%;
+    background-image: url("/assets/images/lebanese-cuisine-pita-tzatziki-falafel-shawarma-mediterranean-bdbe7ab511e36f378d7bcbee34ff1608.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(3px);
+  }
+  .chef {
+    span {
+      font-weight: 700 !important;
+      color: black !important;
+    }
+  }
+  .content-text {
+    p {
+      color: #272042 !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .testimonials {
+    background-image: none;
+    h3,h6{
+      margin: 0 auto;
+    }
+  }
+  .content-text::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -28%;
+    background-image: url("/assets/images/lebanese-cuisine-pita-tzatziki-falafel-shawarma-mediterranean-bdbe7ab511e36f378d7bcbee34ff1608.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(3px);
+    border: 2px solid red;
+  }
+}
